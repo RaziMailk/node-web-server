@@ -38,6 +38,20 @@ response.render('home.hbs', {
 });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects',
+    description: 'project description'
+  });
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact.hbs', {
+    pageTitle: 'Contact',
+    description: 'contacts goes here'
+  });
+});
+
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
